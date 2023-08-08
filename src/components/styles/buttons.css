@@ -1,0 +1,12 @@
+.button {
+  padding: 10px;
+  border: 2px solid var(--font-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}

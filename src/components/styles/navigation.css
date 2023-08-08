@@ -1,0 +1,19 @@
+nav {
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  nav {
+    margin-right: auto;
+  }
+}

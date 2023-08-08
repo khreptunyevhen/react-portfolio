@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/* Variables */
+:root {
+  --font: "Raleway", sans-serif;
+  --section-padding: 60px;
+
+  /* For light node */
+  --primary-color: #302ae6;
+  --secondary-color: #d4d4d4;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #818cab;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+}
+
+/* Breakpoints
+sm	@media (max-width: 640px) {  }
+md	@media (max-width: 768px) {  }
+lg	@media (max-width: 1024px) {  }
+xl	@media (max-width: 1280px) {  }
+2xl	@media (max-width: 1536px) {  } */
+
+/* Reset default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+/* Main styles */
+body {
+  font-family: var(--font);
+  color: var(--font-color);
+  font-size: 0.9rem;
+}
+
+/* Footer to bottom */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

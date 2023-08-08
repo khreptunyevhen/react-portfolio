@@ -1,0 +1,28 @@
+header {
+  background-color: var(--secondary-color);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 15px;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  nav {
+    display: none;
+  }
+
+  .header__buttons .button,
+  .header__buttons .MuiSvgIcon-root {
+    display: none;
+  }
+}

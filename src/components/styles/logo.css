@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo__img {
+  --size: 50px;
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid var(--font-color);
+  border-radius: var(--size);
+  overflow: hidden;
+}
+
+.logo__description {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo__description span {
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .logo__description {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo__description span {
+    display: none;
+  }
+}
