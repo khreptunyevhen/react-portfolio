@@ -1,7 +1,7 @@
 import "./styles/navItem.css";
 
 const NavItem = ({ children }) => {
-  return <li>{children}</li>;
+  return <li className="navigation__menu-item">{children}</li>;
 };
 
 export default NavItem;

@@ -1,9 +1,9 @@
-nav {
+.navigation {
   margin-left: auto;
   margin-right: 60px;
 }
 
-ul {
+.navigation__menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  nav {
+  .navigation {
     margin-right: auto;
   }
 }

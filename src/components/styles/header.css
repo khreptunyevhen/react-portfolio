@@ -16,6 +16,10 @@ header .container {
   gap: 10px;
 }
 
+.header__buttons .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
 @media (max-width: 640px) {
   nav {
     display: none;

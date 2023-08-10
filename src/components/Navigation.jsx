@@ -5,8 +5,8 @@ import "./styles/navigation.css";
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="navigation">
+      <ul className="navigation__menu">
         {info.navigation.map((item, index) => (
           <NavItem key={`nav-item-${index}`}>{item}</NavItem>
         ))}

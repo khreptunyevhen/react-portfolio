@@ -8,7 +8,7 @@
   --size: 50px;
   width: var(--size);
   height: var(--size);
-  border: 1px solid var(--font-color);
+  border: 2px solid var(--primary-color);
   border-radius: var(--size);
   overflow: hidden;
 }
@@ -16,10 +16,12 @@
 .logo__description {
   text-transform: uppercase;
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 .logo__description span {
   font-weight: 400;
+  color: var(--font-color);
 }
 
 @media (max-width: 640px) {

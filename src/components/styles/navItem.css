@@ -1,9 +1,9 @@
-li {
+.navigation__menu-item {
   position: relative;
   cursor: pointer;
 }
 
-li::before {
+.navigation__menu-item::before {
   content: "";
   position: absolute;
   width: 0;
@@ -14,6 +14,6 @@ li::before {
   transition: all 0.3s ease-in;
 }
 
-li:hover::before {
+.navigation__menu-item:hover::before {
   width: 100%;
 }
