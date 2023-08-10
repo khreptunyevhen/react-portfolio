@@ -6,6 +6,14 @@
   --section-padding: 60px;
 
   /* For light node */
+  /* --primary-color: #302ae6;
+  --secondary-color: #d4d4d4;
+  --font-color: #424242;
+  --bg-color: #fbfbfb;
+  --heading-color: #292922; */
+}
+
+[data-theme="light"] {
   --primary-color: #302ae6;
   --secondary-color: #d4d4d4;
   --font-color: #424242;

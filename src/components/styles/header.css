@@ -17,6 +17,7 @@ header .container {
 }
 
 .header__buttons .MuiSvgIcon-root {
+  color: var(--font-color);
   cursor: pointer;
 }
 
