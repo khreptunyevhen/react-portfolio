@@ -21,25 +21,6 @@
   color: var(--primary-color);
 }
 
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.socials__item {
-  font-size: 1.5rem;
-}
-
-.socials__link {
-  transition: all 0.3s ease-in;
-}
-
-.socials__link:hover {
-  color: var(--primary-color);
-}
-
 .footer__code-link {
   font-weight: 600;
   color: var(--primary-color);
