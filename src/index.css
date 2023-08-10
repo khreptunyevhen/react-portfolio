@@ -9,7 +9,7 @@
   --primary-color: #302ae6;
   --secondary-color: #d4d4d4;
   --font-color: #424242;
-  --bg-color: #fff;
+  --bg-color: #fbfbfb;
   --heading-color: #292922;
 }
 
@@ -59,6 +59,7 @@ a {
 body {
   font-family: var(--font);
   color: var(--font-color);
+  background-color: var(--bg-color);
   font-size: 0.9rem;
 }
 
@@ -70,6 +71,9 @@ body {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1 1 auto;
 }
 
