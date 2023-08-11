@@ -1,0 +1,16 @@
+.about {
+  padding: var(--section-padding) 0;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+@media (max-width: 768px) {
+  .about__wrapper {
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}

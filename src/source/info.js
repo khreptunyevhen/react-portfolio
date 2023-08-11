@@ -21,4 +21,30 @@ export const info = {
     },
     { id: 4, url: "https://www.instagram.com/khreptun.e/", icon: faInstagram },
   ],
+  skillBoxes: [
+    {
+      id: 1,
+      title: "Front End 💻",
+      skills: [
+        "HTML",
+        "CSS/SCSS",
+        "TailwindCSS",
+        "JavaScript",
+        "React",
+        "Debug",
+        "Responsive Design",
+        "BEM methodology",
+      ],
+    },
+    {
+      id: 2,
+      title: "Back End 🌐",
+      skills: ["Node.js", "REST API", "Express.js", "PostgreSQL"],
+    },
+    {
+      id: 3,
+      title: "Tools 🔧",
+      skills: ["VSCode", "Git/GitHub", "Figma", "Adobe photoshop", "Insomnia"],
+    },
+  ],
 };

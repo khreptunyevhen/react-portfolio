@@ -1,0 +1,17 @@
+.description a {
+  color: var(--primary-color);
+  transition: all 0.3s ease-in;
+}
+
+.description a:hover,
+.description .button:hover a {
+  color: var(--bg-color);
+}
+
+.description__title {
+  margin-bottom: 30px;
+}
+
+.description__text {
+  margin-bottom: 30px;
+}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
@@ -10,7 +11,8 @@ function App() {
     <>
       <Header themeMode={themeMode} setThemeMode={setThemeMode} />
       <main>
-        <Home />
+        {/* <Home /> */}
+        <About />
       </main>
       <Footer />
     </>
