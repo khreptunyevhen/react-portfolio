@@ -4,13 +4,6 @@
 :root {
   --font: "Raleway", sans-serif;
   --section-padding: 60px;
-
-  /* For light node */
-  /* --primary-color: #302ae6;
-  --secondary-color: #d4d4d4;
-  --font-color: #424242;
-  --bg-color: #fbfbfb;
-  --heading-color: #292922; */
 }
 
 [data-theme="light"] {
@@ -79,9 +72,7 @@ body {
 }
 
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   flex: 1 1 auto;
 }
 
