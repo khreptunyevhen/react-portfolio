@@ -14,6 +14,10 @@
   transition: all 0.3s ease-in;
 }
 
+.navigation__menu-item.active::before {
+  background-color: var(--primary-color);
+}
+
 .navigation__menu-item:hover::before {
   width: 100%;
 }

@@ -12,6 +12,10 @@
   text-transform: uppercase;
 }
 
+.nav-item.active {
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .navigation {
     margin-right: auto;
