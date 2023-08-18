@@ -6,7 +6,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export const info = {
-  navigation: ["Home", "About me", "Portfolio", "Contact"],
+  navigation: [
+    { id: 1, title: "Home", link: "/" },
+    { id: 2, title: "About me", link: "/about-me" },
+    { id: 3, title: "Portfolio", link: "/portfolio" },
+    { id: 4, title: "Contact", link: "/contacts" },
+  ],
   socialLinks: [
     { id: 1, url: "https://github.com/khreptunyevhen", icon: faGithub },
     {

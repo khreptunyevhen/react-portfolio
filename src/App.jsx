@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
@@ -15,27 +16,36 @@ function App() {
     y: 0,
   });
 
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePositions((currentPositions) => ({
+        ...currentPositions,
+        x: e.clientX,
+        y: e.clientY,
+      }));
+
+      // setMousePositions({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => window.removeEventListener("mousemove", mouseMove);
+  }, []);
+
   return (
-    <div
-      onMouseMoveCapture={(e) => {
-        setMousePositions((currentPositions) => ({
-          ...currentPositions,
-          x: e.pageX,
-          y: e.pageY,
-        }));
-        console.log(e);
-      }}
-    >
+    <>
       <Header themeMode={themeMode} setThemeMode={setThemeMode} />
       <main>
-        {/* <Home /> */}
-        <About />
-        <Portfolio />
-        <Contacts />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-me" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
       </main>
       <Footer />
       <Cursor mousePositions={mousePositions} />
-    </div>
+    </>
   );
 }
 

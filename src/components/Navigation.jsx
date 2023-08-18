@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavItem from "./NavItem";
 import { info } from "../source/info";
 
@@ -8,7 +9,9 @@ const Navigation = () => {
     <nav className="navigation">
       <ul className="navigation__menu">
         {info.navigation.map((item, index) => (
-          <NavItem key={`nav-item-${index}`}>{item}</NavItem>
+          <NavItem key={`nav-item-${index}`}>
+            <Link to={item.link}>{item.title}</Link>
+          </NavItem>
         ))}
       </ul>
     </nav>
