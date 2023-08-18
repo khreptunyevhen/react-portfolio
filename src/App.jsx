@@ -4,6 +4,7 @@ import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import Contacts from "./components/Contacts.jsx";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
@@ -14,7 +15,8 @@ function App() {
       <main>
         {/* <Home /> */}
         {/* <About /> */}
-        <Portfolio />
+        {/* <Portfolio /> */}
+        <Contacts />
       </main>
       <Footer />
     </>
