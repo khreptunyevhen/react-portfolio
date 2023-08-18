@@ -19,7 +19,6 @@ const Header = ({ themeMode, setThemeMode }) => {
 
   useEffect(() => {
     const receiveTheme = window.localStorage.getItem("theme");
-    console.log(receiveTheme);
     if (receiveTheme !== null) setThemeMode(JSON.parse(receiveTheme));
   }, []);
 
@@ -31,7 +30,7 @@ const Header = ({ themeMode, setThemeMode }) => {
   return (
     <header>
       <div className="container">
-        <Logo />
+        <Logo themeMode={themeMode} />
         <Navigation />
         <div className="header__buttons">
           <Button buttonStyles="button">Hire me</Button>
