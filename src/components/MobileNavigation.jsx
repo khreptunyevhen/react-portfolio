@@ -7,6 +7,8 @@ import "./styles/mobileNavigation.css";
 
 const MobileNavigation = ({ mobileMenu, setMobileMenu }) => {
   const handleMobileMenu = () => {
+    document.body.style.overflow = "initial";
+
     setMobileMenu(false);
   };
 
