@@ -12,11 +12,13 @@
 
 [data-theme="light"] {
   --font-color: #181818;
+  --font-color-opacity: rgba(24, 24, 24, 0.2);
   --bg-color: #fff;
 }
 
 [data-theme="dark"] {
   --font-color: #fff;
+  --font-color-opacity: rgba(255, 255, 255, 0.2);
   --bg-color: #181818;
 }
 

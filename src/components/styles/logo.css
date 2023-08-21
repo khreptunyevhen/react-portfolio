@@ -41,8 +41,8 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  .logo__description span {
+@media (max-width: 1024px) {
+  .logo__description {
     display: none;
   }
 }

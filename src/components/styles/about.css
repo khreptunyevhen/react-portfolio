@@ -1,5 +1,7 @@
 .about {
   padding: var(--section-padding) 0;
+  box-shadow: inset 0px 11px 8px -10px var(--font-color-opacity),
+    inset 0px -11px 8px -10px var(--font-color-opacity);
 }
 
 .about__wrapper {
