@@ -1,13 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavItem from "./NavItem";
 import { info } from "../source/info";
 
 import "./styles/navigation.css";
 
-const Navigation = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
+const Navigation = ({ activeTab, setActiveTab }) => {
   useEffect(() => {
     const receiveActiveTab = window.localStorage.getItem("active-tab");
 

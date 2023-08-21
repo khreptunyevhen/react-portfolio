@@ -18,8 +18,8 @@ const Home = () => {
               <FontAwesomeIcon icon={faDownload} /> Resume
             </Button>
           </a>
-          <Link to={"contacts"}>
-            <Button buttonStyles="button">Contact</Button>
+          <Link to={"portfolio"}>
+            <Button buttonStyles="button">Projects</Button>
           </Link>
         </div>
       </div>

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 import "./styles/logo.css";
 
-const Logo = ({ themeMode }) => {
+const Logo = ({ themeMode, setActiveTab }) => {
   return (
-    <Link to={"/"} className="logo">
+    <Link to={"/"} className="logo" onClick={() => setActiveTab(0)}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"

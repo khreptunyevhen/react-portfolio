@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Button from "./Button";
@@ -17,6 +17,8 @@ const Header = ({ themeMode, setThemeMode }) => {
     }
   };
 
+  const [activeTab, setActiveTab] = useState(0);
+
   useEffect(() => {
     const receiveTheme = window.localStorage.getItem("theme");
     if (receiveTheme !== null) setThemeMode(JSON.parse(receiveTheme));
@@ -30,10 +32,10 @@ const Header = ({ themeMode, setThemeMode }) => {
   return (
     <header>
       <div className="container">
-        <Logo themeMode={themeMode} />
-        <Navigation />
+        <Logo themeMode={themeMode} setActiveTab={setActiveTab} />
+        <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="header__buttons">
-          <Link to={"contacts"}>
+          <Link to={"contacts"} onClick={() => setActiveTab(3)}>
             <Button buttonStyles="button">Hire me</Button>
           </Link>
           <Button handleToggleThemeMode={handleToggleThemeMode}>
