@@ -2,11 +2,6 @@
   padding: var(--section-padding) 0;
 }
 
-.contacts__text span {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
 .contacts__text {
   margin-bottom: 20px;
 }

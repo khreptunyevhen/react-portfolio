@@ -1,29 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-/* Variables */
 :root {
   --font: "Raleway", sans-serif;
   --section-padding: 60px;
   --light: #fff;
   --dark-opacity: rgba(0, 0, 0, 0.5);
+  --primary-color: #4da31b;
+  --primary-color-opacity: rgba(77, 163, 27, 0.5);
+  --primary-color-light: #efffe6;
 }
 
 [data-theme="light"] {
-  --primary-color: #302ae6;
-  --primary-color-opacity: rgba(48, 42, 230, 0.5);
-  --secondary-color: #d4d4d4;
-  --font-color: #424242;
-  --bg-color: #fbfbfb;
-  --heading-color: #292922;
+  --font-color: #181818;
+  --bg-color: #fff;
 }
 
 [data-theme="dark"] {
-  --primary-color: #9a97f3;
-  --primary-color-opacity: rgba(154, 151, 243, 0.5);
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
+  --font-color: #fff;
+  --bg-color: #181818;
 }
 
 /* Breakpoints
@@ -65,7 +59,7 @@ body {
   font-family: var(--font);
   color: var(--font-color);
   background-color: var(--bg-color);
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 body::-webkit-scrollbar {
@@ -88,6 +82,12 @@ main {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+p > span,
+h2 > span {
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 /* Custome cursor styles */

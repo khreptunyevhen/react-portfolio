@@ -1,5 +1,6 @@
 .navigation__menu-item {
   position: relative;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -7,7 +8,7 @@
   content: "";
   position: absolute;
   width: 0;
-  height: 1px;
+  height: 1.5px;
   background-color: var(--font-color);
   left: 0;
   bottom: -2px;

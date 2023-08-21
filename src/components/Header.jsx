@@ -32,11 +32,11 @@ const Header = ({ themeMode, setThemeMode }) => {
   return (
     <header>
       <div className="container">
-        <Logo themeMode={themeMode} setActiveTab={setActiveTab} />
+        <Logo setActiveTab={setActiveTab} />
         <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="header__buttons">
           <Link to={"contacts"} onClick={() => setActiveTab(3)}>
-            <Button buttonStyles="button">Hire me</Button>
+            <Button dataText="Hire me" buttonStyles="button"></Button>
           </Link>
           <Button handleToggleThemeMode={handleToggleThemeMode}>
             {themeMode === "light" ? (

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./styles/logo.css";
 
-const Logo = ({ themeMode, setActiveTab }) => {
+const Logo = ({ setActiveTab }) => {
   return (
     <Link to={"/"} className="logo" onClick={() => setActiveTab(0)}>
       <svg
@@ -15,7 +15,7 @@ const Logo = ({ themeMode, setActiveTab }) => {
       >
         <g
           transform="translate(0.000000,420.000000) scale(0.100000,-0.100000)"
-          fill={themeMode === "dark" ? "#9a97f3" : "#302ae6"}
+          fill={"#4da31b"}
           stroke="none"
         >
           <path
@@ -46,7 +46,7 @@ const Logo = ({ themeMode, setActiveTab }) => {
           Yevhen <span>Khreptun</span>
         </p>
         <p>
-          <span>Full Stack</span> Developer
+          <span>Web</span> Developer
         </p>
       </div>
     </Link>

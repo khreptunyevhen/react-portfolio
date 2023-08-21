@@ -50,7 +50,12 @@ textarea {
 
 input:focus,
 textarea:focus {
+  background-color: var(--primary-color-light);
   border-bottom-color: var(--primary-color);
+}
+
+input:target {
+  background-color: transparent;
 }
 
 textarea {

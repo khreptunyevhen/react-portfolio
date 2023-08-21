@@ -26,12 +26,12 @@ img {
 
 .logo__description {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary-color);
 }
 
 .logo__description span {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--font-color);
 }
 

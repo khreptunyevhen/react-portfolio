@@ -5,7 +5,7 @@ const Skills = ({ skills }) => {
     <ul className="skills__menu">
       {skills.map((skill, i) => (
         <li key={`skill-${i}`} className="skills__item">
-          {skill}
+          #{skill}
         </li>
       ))}
     </ul>

@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 
 import "./styles/contactForm.css";
 
+// TODO: refactor add button component
+
 const ContactForm = () => {
   const form = useRef();
 
@@ -46,7 +48,7 @@ const ContactForm = () => {
           required
         ></textarea>
       </div>
-      <button className="button">Send message</button>
+      <button data-text="Send message" className="button"></button>
     </form>
   );
 };
