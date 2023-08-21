@@ -23,8 +23,6 @@ function App() {
         x: e.clientX,
         y: e.clientY,
       }));
-
-      // setMousePositions({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener("mousemove", mouseMove);

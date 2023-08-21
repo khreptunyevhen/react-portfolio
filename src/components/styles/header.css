@@ -1,5 +1,7 @@
 header {
+  position: relative;
   background-color: var(--bg-color);
+  transition: all 0.3s ease-in;
 }
 
 header .container {

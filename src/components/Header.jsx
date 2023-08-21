@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Button from "./Button";
 import Logo from "./Logo";
+import HamburgerMenu from "./HamburgerMenu";
+import MobileNavigation from "./MobileNavigation";
+
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 import "./styles/header.css";
 
 const Header = ({ themeMode, setThemeMode }) => {
+  const [activeTab, setActiveTab] = useState(0);
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   const handleToggleThemeMode = () => {
     if (themeMode === "light") {
       setThemeMode("dark");
@@ -16,8 +22,6 @@ const Header = ({ themeMode, setThemeMode }) => {
       setThemeMode("light");
     }
   };
-
-  const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
     const receiveTheme = window.localStorage.getItem("theme");
@@ -51,8 +55,15 @@ const Header = ({ themeMode, setThemeMode }) => {
               />
             )}
           </Button>
+          <HamburgerMenu
+            mobileMenu={mobileMenu}
+            setMobileMenu={setMobileMenu}
+          />
         </div>
-        {/* TODO: mobile menu */}
+        <MobileNavigation
+          mobileMenu={mobileMenu}
+          setMobileMenu={setMobileMenu}
+        />
       </div>
     </header>
   );

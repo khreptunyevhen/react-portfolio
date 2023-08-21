@@ -1,0 +1,30 @@
+.mobile-menu {
+  padding: var(--section-padding) 0;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - 110px);
+  text-align: center;
+  background-color: var(--bg-color);
+  z-index: 100;
+  transition: all ease 0.5s;
+}
+
+.mobile-menu__item {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-menu__item a {
+  transition: color 0.3s ease-in;
+}
+
+.mobile-menu__item:hover a {
+  color: var(--primary-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
