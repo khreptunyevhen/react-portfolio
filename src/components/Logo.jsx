@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 
 import "./styles/logo.css";
 
-const Logo = ({ setActiveTab }) => {
+const Logo = ({ setActiveTab, setMobileMenu }) => {
+  const hahdleResetStates = () => {
+    setActiveTab(0);
+    setMobileMenu(false);
+  };
+
   return (
-    <Link to={"/"} className="logo" onClick={() => setActiveTab(0)}>
+    <Link to={"/"} className="logo" onClick={hahdleResetStates}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"

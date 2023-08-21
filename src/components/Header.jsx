@@ -36,7 +36,7 @@ const Header = ({ themeMode, setThemeMode }) => {
   return (
     <header>
       <div className="container">
-        <Logo setActiveTab={setActiveTab} />
+        <Logo setActiveTab={setActiveTab} setMobileMenu={setMobileMenu} />
         <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="header__buttons">
           <Link to={"contacts"} onClick={() => setActiveTab(3)}>
