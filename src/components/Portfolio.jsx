@@ -18,8 +18,14 @@ const Portfolio = () => {
     <section className="portfolio">
       <div className="container">
         <SectionTitle>Portfolio</SectionTitle>
-        <ProjectsTypeFilter projectTypes={projectTypes} />
-        <ProjectsBox allProjects={allProjects} />
+        {allProjects.length > 0 ? (
+          <>
+            <ProjectsTypeFilter projectTypes={projectTypes} />
+            <ProjectsBox allProjects={allProjects} />
+          </>
+        ) : (
+          <p>Coming soon... 😰</p>
+        )}
       </div>
     </section>
   );
