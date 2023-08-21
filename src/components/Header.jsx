@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Button from "./Button";
 import Logo from "./Logo";
@@ -33,7 +33,9 @@ const Header = ({ themeMode, setThemeMode }) => {
         <Logo themeMode={themeMode} />
         <Navigation />
         <div className="header__buttons">
-          <Button buttonStyles="button">Hire me</Button>
+          <Link to={"contacts"}>
+            <Button buttonStyles="button">Hire me</Button>
+          </Link>
           <Button handleToggleThemeMode={handleToggleThemeMode}>
             {themeMode === "light" ? (
               <DarkModeOutlinedIcon

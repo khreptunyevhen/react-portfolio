@@ -13,6 +13,13 @@
   justify-content: center;
 }
 
+.home__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
 .home__info {
   text-align: center;
 }
@@ -38,4 +45,11 @@
 .home__description {
   font-size: 1.5em;
   margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .home__buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

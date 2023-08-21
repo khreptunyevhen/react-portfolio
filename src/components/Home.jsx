@@ -1,12 +1,27 @@
 import "./styles/home.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+import pdf from "../assets/Yevhen_Khreptun_CV.pdf";
 
 const Home = () => {
   return (
     <section className="home">
       <div className="container home__inner">
         <HomeBox />
-        <Button buttonStyles="button">Contact</Button>
+        <div className="home__buttons">
+          <a href={pdf} target="__blank">
+            <Button buttonStyles="button">
+              <FontAwesomeIcon icon={faDownload} /> Resume
+            </Button>
+          </a>
+          <Link to={"contacts"}>
+            <Button buttonStyles="button">Contact</Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
