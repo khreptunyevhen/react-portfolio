@@ -63,6 +63,8 @@ const Header = ({ themeMode, setThemeMode }) => {
         <MobileNavigation
           mobileMenu={mobileMenu}
           setMobileMenu={setMobileMenu}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
         />
       </div>
     </header>

@@ -21,6 +21,10 @@
   transition: color 0.3s ease-in;
 }
 
+.mobile-menu__item.active a {
+  color: var(--primary-color);
+}
+
 .mobile-menu__item:hover a {
   color: var(--primary-color);
 }

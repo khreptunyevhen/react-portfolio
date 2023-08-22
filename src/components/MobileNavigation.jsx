@@ -5,10 +5,16 @@ import { info } from "../source/info";
 
 import "./styles/mobileNavigation.css";
 
-const MobileNavigation = ({ mobileMenu, setMobileMenu }) => {
-  const handleMobileMenu = () => {
+const MobileNavigation = ({
+  mobileMenu,
+  setMobileMenu,
+  activeTab,
+  setActiveTab,
+}) => {
+  const handleMobileMenu = (index) => {
     document.body.style.overflow = "initial";
 
+    setActiveTab(index);
     setMobileMenu(false);
   };
 
@@ -22,8 +28,10 @@ const MobileNavigation = ({ mobileMenu, setMobileMenu }) => {
       <ul>
         {info.navigation.map((item, index) => (
           <NavItem
-            onMobileMenu={handleMobileMenu}
-            className={"mobile-menu__item"}
+            onMobileMenu={() => handleMobileMenu(index)}
+            className={`mobile-menu__item${
+              Number(activeTab) === index ? " active" : ""
+            }`}
             key={`mobile-menu-item-${index}`}
           >
             <Link to={item.link}>{item.title}</Link>
