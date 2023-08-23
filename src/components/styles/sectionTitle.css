@@ -1,7 +1,31 @@
 .title {
+  position: relative;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
   margin-bottom: 30px;
+}
+
+.title__text {
+  font-weight: 800;
+  color: var(--font-color);
+}
+
+.title__shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--font-color);
+  opacity: 0.03;
+  z-index: -10;
+}
+
+@media (max-width: 640px) {
+  .title__shadow {
+    font-size: 4.5rem;
+  }
 }

@@ -17,7 +17,12 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <div className="container">
-        <SectionTitle>Portfolio</SectionTitle>
+        <SectionTitle>
+          <h2 className="title">
+            <span className="title__text">Portfolio</span>
+            <span className="title__shadow">Works</span>
+          </h2>
+        </SectionTitle>
         {allProjects.length > 0 ? (
           <>
             <ProjectsTypeFilter projectTypes={projectTypes} />
