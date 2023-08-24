@@ -1,12 +1,32 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import Button from "./Button";
 import emailjs from "@emailjs/browser";
 
 import "./styles/contactForm.css";
 
-// TODO: refactor add button component
-
 const ContactForm = () => {
   const form = useRef();
+
+  const [userInfo, setUserInfo] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [isCorrectInfo, setIsCorrectInfo] = useState({
+    name: false,
+    email: false,
+    subject: false,
+    message: false,
+  });
+
+  const handleUserInfo = (e) => {
+    setUserInfo((curr) => ({
+      ...curr,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,19 +48,47 @@ const ContactForm = () => {
       );
 
     e.target.reset();
+
+    setUserInfo({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
     <form className="contacts__form form" ref={form} onSubmit={sendEmail}>
       <div className="form__top">
-        <input name="name" type="text" placeholder="Name" required />
-        <input name="email" type="email" placeholder="Email" required />
+        <input
+          onChange={handleUserInfo}
+          onBlur={handleCorrectName}
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input
+          onChange={handleUserInfo}
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
       </div>
       <div className="form__middle">
-        <input name="subject" type="text" placeholder="Subject" required />
+        <input
+          onChange={handleUserInfo}
+          onBlur={handleCorrectSubject}
+          name="subject"
+          type="text"
+          placeholder="Subject"
+          required
+        />
       </div>
       <div className="form__bottom">
         <textarea
+          onChange={handleUserInfo}
           name="message"
           cols="30"
           rows="10"
@@ -48,7 +96,7 @@ const ContactForm = () => {
           required
         ></textarea>
       </div>
-      <button data-text="Send message" className="button"></button>
+      <Button dataText={`Send message`} buttonStyles="button"></Button>
     </form>
   );
 };

@@ -8,18 +8,17 @@
   --primary-color: #4da31b;
   --primary-color-opacity: rgba(77, 163, 27, 0.5);
   --primary-color-light: #efffe6;
+  --shadow-text-color: rgba(100, 100, 100, 0.1);
 }
 
 [data-theme="light"] {
   --font-color: #212529;
-  --shadow-text-color: rgba(100, 100, 100, 0.1);
   --font-color-opacity: rgba(24, 24, 24, 0.2);
   --bg-color: #fff;
 }
 
 [data-theme="dark"] {
   --font-color: #fff;
-  --shadow-text-color: rgba(100, 100, 100, 0.1);
   --font-color-opacity: rgba(255, 255, 255, 0.2);
   --bg-color: #212529;
 }
