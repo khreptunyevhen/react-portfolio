@@ -62,7 +62,6 @@ const ContactForm = () => {
       <div className="form__top">
         <input
           onChange={handleUserInfo}
-          onBlur={handleCorrectName}
           name="name"
           type="text"
           placeholder="Name"
@@ -79,7 +78,6 @@ const ContactForm = () => {
       <div className="form__middle">
         <input
           onChange={handleUserInfo}
-          onBlur={handleCorrectSubject}
           name="subject"
           type="text"
           placeholder="Subject"
