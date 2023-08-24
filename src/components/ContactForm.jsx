@@ -14,12 +14,10 @@ const ContactForm = () => {
     message: "",
   });
 
-  const [isCorrectInfo, setIsCorrectInfo] = useState({
-    name: false,
-    email: false,
-    subject: false,
-    message: false,
-  });
+  const [errors, setErrors] = useState({});
+
+  const isAllowSend =
+    userInfo.name && userInfo.email && userInfo.subject && userInfo.message;
 
   const handleUserInfo = (e) => {
     setUserInfo((curr) => ({
@@ -31,30 +29,51 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_p22hycr",
-        "template_r0tu7f3",
-        form.current,
-        "6GUQzJGJqf7PWKwPV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    const errorMessages = {};
 
-    e.target.reset();
+    if (!userInfo.name.trim()) errorMessages.nameError = "Required";
 
-    setUserInfo({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    if (!userInfo.email.trim()) {
+      errorMessages.emailError = "Required";
+    }
+
+    if (!userInfo.email.trim()) {
+      errorMessages.subjectError = "Required";
+    }
+
+    if (!userInfo.email.trim()) {
+      errorMessages.messageError = "Required";
+    }
+
+    console.log(errorMessages);
+    setErrors(errorMessages);
+
+    if (isAllowSend) {
+      emailjs
+        .sendForm(
+          "service_p22hycr",
+          "template_r0tu7f3",
+          form.current,
+          "6GUQzJGJqf7PWKwPV"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
+      e.target.reset();
+
+      setUserInfo({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
   };
 
   return (
@@ -63,16 +82,18 @@ const ContactForm = () => {
         <input
           onChange={handleUserInfo}
           name="name"
+          style={{
+            borderBottomColor: errors.nameError ? "red" : "white",
+          }}
           type="text"
           placeholder="Name"
-          required
         />
+        {errors.nameError && <span>{errors.nameError}</span>}
         <input
           onChange={handleUserInfo}
           name="email"
           type="email"
           placeholder="Email"
-          required
         />
       </div>
       <div className="form__middle">
@@ -81,7 +102,6 @@ const ContactForm = () => {
           name="subject"
           type="text"
           placeholder="Subject"
-          required
         />
       </div>
       <div className="form__bottom">
@@ -91,10 +111,18 @@ const ContactForm = () => {
           cols="30"
           rows="10"
           placeholder="Message"
-          required
         ></textarea>
       </div>
-      <Button dataText={`Send message`} buttonStyles="button"></Button>
+      <button
+        style={{
+          cursor: isAllowSend ? "pointer" : "not-allowed",
+        }}
+        className="button"
+        type="submit"
+      >
+        Send
+      </button>
+      {/* <Button dataText={`Send message`} buttonStyles="button"></Button> */}
     </form>
   );
 };
