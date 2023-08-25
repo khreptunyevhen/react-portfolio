@@ -26,12 +26,17 @@
   gap: var(--gap);
 }
 
-.form__top input {
+.form__top input,
+.form__top .input__field {
   width: 100%;
 }
 
 .form__middle input {
   width: 100%;
+}
+
+.form__bottom {
+  position: relative;
 }
 
 .form__bottom textarea {
@@ -40,8 +45,8 @@
 
 input,
 textarea {
-  font-family: var(--font);
   position: relative;
+  font-family: var(--font);
   padding: 10px;
   font-weight: 500;
   border: 2px solid var(--font-color);
@@ -58,10 +63,33 @@ input:target {
   background-color: transparent;
 }
 
+.input__field {
+  position: relative;
+}
+
+input.field-error,
+textarea.field-error {
+  border-bottom-color: var(--danger);
+  background-color: var(--danger-opacity);
+}
+
+.error-message {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  color: var(--danger);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
 textarea {
   resize: none;
 }
 
 .form .button {
   width: fit-content;
+}
+
+.success-message {
+  color: var(--primary-color);
 }

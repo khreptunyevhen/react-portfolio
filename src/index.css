@@ -9,6 +9,8 @@
   --primary-color-opacity: rgba(77, 163, 27, 0.5);
   --primary-color-light: #efffe6;
   --shadow-text-color: rgba(100, 100, 100, 0.1);
+  --danger: #ff0000;
+  --danger-opacity: rgba(255, 0, 0, 0.1);
 }
 
 [data-theme="light"] {
