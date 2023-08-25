@@ -60,12 +60,14 @@ const Header = ({ themeMode, setThemeMode }) => {
             setMobileMenu={setMobileMenu}
           />
         </div>
-        <MobileNavigation
-          mobileMenu={mobileMenu}
-          setMobileMenu={setMobileMenu}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
+        {mobileMenu && (
+          <MobileNavigation
+            mobileMenu={mobileMenu}
+            setMobileMenu={setMobileMenu}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+        )}
       </div>
     </header>
   );

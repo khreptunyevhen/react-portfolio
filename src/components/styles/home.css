@@ -1,9 +1,6 @@
 .home {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: var(--section-padding) 0;
+  padding-top: calc(var(--section-padding) + 110px);
 }
 
 .home__inner {

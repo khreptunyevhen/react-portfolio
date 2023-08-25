@@ -1,8 +1,7 @@
 .mobile-menu {
-  padding: var(--section-padding) 0;
   position: absolute;
+  padding: var(--section-padding) 0;
   top: 100%;
-  right: -100%;
   width: 100%;
   height: calc(100vh - 110px);
   text-align: center;
