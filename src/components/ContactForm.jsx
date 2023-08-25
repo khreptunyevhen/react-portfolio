@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import Button from "./Button";
+import InputField from "./InputField";
 import emailjs from "@emailjs/browser";
 
 import "./styles/contactForm.css";
@@ -109,47 +110,29 @@ const ContactForm = () => {
   return (
     <form className="contacts__form form" ref={form} onSubmit={sendEmail}>
       <div className="form__top">
-        <div className="input__field">
-          <input
-            className={errors.nameError ? "field-error" : ""}
-            onChange={handleUserInfo}
-            name="name"
-            value={userInfo.name}
-            type="text"
-            placeholder="Name"
-          />
-          {errors.nameError && (
-            <span className="error-message">{errors.nameError}</span>
-          )}
-        </div>
-        <div className="input__field">
-          <input
-            className={errors.emailError ? "field-error" : ""}
-            onChange={handleUserInfo}
-            name="email"
-            value={userInfo.email}
-            type="text"
-            placeholder="Email"
-          />
-          {errors.emailError && (
-            <span className="error-message">{errors.emailError}</span>
-          )}
-        </div>
+        <InputField
+          error={errors.nameError}
+          info={userInfo.name}
+          onHandleUserInfo={handleUserInfo}
+          name={"name"}
+          holder={"Name"}
+        />
+        <InputField
+          error={errors.emailError}
+          info={userInfo.email}
+          onHandleUserInfo={handleUserInfo}
+          name={"email"}
+          holder={"Email"}
+        />
       </div>
       <div className="form__middle">
-        <div className="input__field">
-          <input
-            className={errors.subjectError ? "field-error" : ""}
-            onChange={handleUserInfo}
-            name="subject"
-            value={userInfo.subject}
-            type="text"
-            placeholder="Subject"
-          />
-          {errors.subjectError && (
-            <span className="error-message">{errors.subjectError}</span>
-          )}
-        </div>
+        <InputField
+          error={errors.subjectError}
+          info={userInfo.subject}
+          onHandleUserInfo={handleUserInfo}
+          name={"subject"}
+          holder={"Subject"}
+        />
       </div>
       <div className="form__bottom">
         <textarea
@@ -165,13 +148,7 @@ const ContactForm = () => {
           <span className="error-message">{errors.messageError}</span>
         )}
       </div>
-      <Button
-        style={{
-          cursor: isAllowSend ? "pointer" : "not-allowed",
-        }}
-        dataText={`Send message`}
-        buttonStyles="button"
-      ></Button>
+      <Button dataText={`Send message`} buttonStyles="button"></Button>
       {showSuccess && (
         <p className="success-message">The message had been send!</p>
       )}
