@@ -32,13 +32,16 @@ export const info = {
       title: "Front End 💻",
       skills: [
         "HTML",
-        "CSS/SCSS",
+        "CSS",
+        "SCSS",
         "TailwindCSS",
         "JavaScript",
         "React",
+        "React Router",
         "Debug",
         "Responsive Design",
         "BEM methodology",
+        "Cross browser compatibility",
       ],
     },
     {
@@ -49,7 +52,16 @@ export const info = {
     {
       id: 3,
       title: "Tools 🔧",
-      skills: ["VSCode", "Git/GitHub", "Figma", "Adobe photoshop", "Insomnia"],
+      skills: [
+        "VSCode",
+        "Git",
+        "GitHub",
+        "NPM",
+        "Figma",
+        "Adobe photoshop",
+        "Insomnia",
+        "Postman",
+      ],
     },
   ],
   projects: [
