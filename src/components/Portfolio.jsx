@@ -25,7 +25,7 @@ const Portfolio = () => {
         </SectionTitle>
         {allProjects.length > 0 ? (
           <>
-            <ProjectsTypeFilter projectTypes={projectTypes} />
+            {/* <ProjectsTypeFilter projectTypes={projectTypes} /> */}
             <ProjectsBox allProjects={allProjects} />
           </>
         ) : (
