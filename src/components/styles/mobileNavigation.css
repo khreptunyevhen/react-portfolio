@@ -7,7 +7,7 @@
   text-align: center;
   background-color: var(--bg-color);
   z-index: 100;
-  transition: all ease 0.5s;
+  transition: right ease 0.5s;
 }
 
 .mobile-menu__item {
