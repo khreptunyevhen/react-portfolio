@@ -90,31 +90,31 @@ export const info = {
       code: "",
       preview: "",
     },
-    // {
-    //   id: 2,
-    //   title: "Polls Planet",
-    //   type: "App",
-    //   description:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit, labore cum, magni est reiciendis esse nihil id sunt saepe ullam velit molestias beatae voluptas tenetur nemo quisquam iure possimus. Aliquid culpa alias, cum, ducimus cupiditate nihil quaerat delectus facilis molestias eaque architecto odio saepe obcaecati ex ipsa provident debitis harum esse tempore itaque ea a nesciunt numquam similique. Nisi!",
-    //   shortDescription:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    //   technology: {
-    //     title: "Technology",
-    //     skills: [
-    //       "HTML",
-    //       "CSS/SCSS",
-    //       "TailwindCSS",
-    //       "JavaScript",
-    //       "React",
-    //       "Debug",
-    //       "Responsive Design",
-    //       "BEM methodology",
-    //     ],
-    //   },
-    //   img: "./images/projects/gallery-1.jpg",
-    //   code: "",
-    //   preview: "",
-    // },
+    {
+      id: 2,
+      title: "Polls Planet",
+      type: "App",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit, labore cum, magni est reiciendis esse nihil id sunt saepe ullam velit molestias beatae voluptas tenetur nemo quisquam iure possimus. Aliquid culpa alias, cum, ducimus cupiditate nihil quaerat delectus facilis molestias eaque architecto odio saepe obcaecati ex ipsa provident debitis harum esse tempore itaque ea a nesciunt numquam similique. Nisi!",
+      shortDescription:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "CSS/SCSS",
+          "TailwindCSS",
+          "JavaScript",
+          "React",
+          "Debug",
+          "Responsive Design",
+          "BEM methodology",
+        ],
+      },
+      img: "./images/projects/gallery-1.jpg",
+      code: "",
+      preview: "",
+    },
     // {
     //   id: 3,
     //   title: "Shoes store",

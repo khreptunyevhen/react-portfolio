@@ -4,15 +4,15 @@ import "./styles/smallProject.css";
 
 const SmallProject = ({ project }) => {
   return (
-    <div className="projects__item">
+    <div className="project">
       <div className="project__img">
         <img src={project.img} alt={project.title} />
       </div>
-      <div className="projects__item-description">
-        <h3 className="projects__item-title">{project.title}</h3>
-        <p className="projects__item-text">{project.shortDescription}</p>
-        <Button buttonStyles="button">See more</Button>
+      <div className="project__description">
+        <h2 className="project__title">{project.title}</h2>
+        <p className="project__type">{project.type}</p>
       </div>
+      <Button dataText="More" buttonStyles="button"></Button>
     </div>
   );
 };

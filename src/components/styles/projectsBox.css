@@ -1,8 +1,7 @@
 .portfolio__projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  gap: 25px;
+  padding-top: 10px;
 }
