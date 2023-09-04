@@ -1,0 +1,38 @@
+.current-project {
+  padding: var(--section-padding) 0;
+  padding-top: calc(var(--section-padding) + 110px);
+}
+
+.current-project__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.current-project__wrapper time {
+  display: inline-block;
+}
+
+.current-project__wrapper p {
+  text-align: justify;
+}
+
+.current-project__wrapper p,
+.current-project__wrapper .skills__menu,
+.current-project__wrapper time {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .current-project__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .current-project__wrapper .skills__menu {
+    justify-content: flex-start;
+  }
+
+  .current-project__wrapper .current-project__slider {
+    max-height: 300px;
+  }
+}

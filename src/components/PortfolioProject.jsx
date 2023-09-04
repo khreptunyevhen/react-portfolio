@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import { info } from "../source/info.js";
 
+import "./styles/portfolioProject.css";
+
 const PortfolioProject = () => {
   const routeParams = useParams();
   const id = routeParams.id;
@@ -15,21 +17,17 @@ const PortfolioProject = () => {
 
   return (
     <div className="container">
-      <div
-        className="current-project"
-        style={{
-          paddingTop: "200px",
-        }}
-      >
-        <h2 className="current-project__title">{currentProject.title}</h2>
+      <div className="current-project">
+        <h2 className="current-project__title title">{currentProject.title}</h2>
         <div className="current-project__wrapper">
           <div className="current-project__slider">
             <img src={`.${currentProject.img}`} alt={currentProject.title} />
           </div>
           <div className="current-project__description">
             <h3 className="skills__title">Project Info:</h3>
-            <p>{currentProject.description}</p>
+            <p>{currentProject.shortDescription}</p>
             <h3 className="skills__title">Project Details:</h3>
+            <p>{currentProject.description}</p>
             <div>
               <h3 className="skills__title">
                 {currentProject.technology.title}:
