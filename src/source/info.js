@@ -67,6 +67,7 @@ export const info = {
   projects: [
     {
       id: 1,
+      idLink: "personal-website",
       title: "Personal portfolio",
       type: "Landing",
       description:
@@ -87,11 +88,13 @@ export const info = {
         ],
       },
       img: "./images/projects/gallery-1.jpg",
-      code: "",
-      preview: "",
+      code: "https://github.com/khreptunyevhen/react-portfolio",
+      preview: "not yet",
+      time: "2023-09-04",
     },
     {
       id: 2,
+      idLink: "polls-planet",
       title: "Polls Planet",
       type: "App",
       description:
@@ -112,33 +115,9 @@ export const info = {
         ],
       },
       img: "./images/projects/gallery-1.jpg",
-      code: "",
-      preview: "",
+      code: "https://github.com/khreptunyevhen/PollsPlanet",
+      preview: "not yet",
+      time: "2023-09-04",
     },
-    // {
-    //   id: 3,
-    //   title: "Shoes store",
-    //   type: "e-commerce",
-    //   description:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit, labore cum, magni est reiciendis esse nihil id sunt saepe ullam velit molestias beatae voluptas tenetur nemo quisquam iure possimus. Aliquid culpa alias, cum, ducimus cupiditate nihil quaerat delectus facilis molestias eaque architecto odio saepe obcaecati ex ipsa provident debitis harum esse tempore itaque ea a nesciunt numquam similique. Nisi!",
-    //   shortDescription:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    //   technology: {
-    //     title: "Technology",
-    //     skills: [
-    //       "HTML",
-    //       "CSS/SCSS",
-    //       "TailwindCSS",
-    //       "JavaScript",
-    //       "React",
-    //       "Debug",
-    //       "Responsive Design",
-    //       "BEM methodology",
-    //     ],
-    //   },
-    //   img: "./images/projects/gallery-1.jpg",
-    //   code: "",
-    //   preview: "",
-    // },
   ],
 };

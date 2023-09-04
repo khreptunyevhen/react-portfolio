@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
-import ProjectsTypeFilter from "./ProjectsTypeFilter";
+// import ProjectsTypeFilter from "./ProjectsTypeFilter";
 import ProjectsBox from "./ProjectsBox";
 
 import "./styles/portfolio.css";

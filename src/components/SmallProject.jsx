@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 import "./styles/smallProject.css";
 
@@ -12,7 +13,9 @@ const SmallProject = ({ project }) => {
         <h2 className="project__title">{project.title}</h2>
         <p className="project__type">{project.type}</p>
       </div>
-      <Button dataText="More" buttonStyles="button"></Button>
+      <Link to={`/portfolio/${project.idLink}`}>
+        <Button dataText="More" buttonStyles="button"></Button>
+      </Link>
     </div>
   );
 };

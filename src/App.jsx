@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Portfolio from "./components/Portfolio.jsx";
+import PortfolioProject from "./components/PortfolioProject.jsx";
 import Contacts from "./components/Contacts.jsx";
 import Cursor from "./components/Cursor.jsx";
 
@@ -16,19 +17,19 @@ function App() {
     y: 0,
   });
 
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePositions((currentPositions) => ({
-        ...currentPositions,
-        x: e.clientX,
-        y: e.clientY,
-      }));
-    };
+  // useEffect(() => {
+  //   const mouseMove = (e) => {
+  //     setMousePositions((currentPositions) => ({
+  //       ...currentPositions,
+  //       x: e.clientX,
+  //       y: e.clientY,
+  //     }));
+  //   };
 
-    window.addEventListener("mousemove", mouseMove);
+  //   window.addEventListener("mousemove", mouseMove);
 
-    return () => window.removeEventListener("mousemove", mouseMove);
-  }, []);
+  //   return () => window.removeEventListener("mousemove", mouseMove);
+  // }, []);
 
   return (
     <>
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-me" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:id" element={<PortfolioProject />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </main>

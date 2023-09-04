@@ -8,6 +8,10 @@
   box-shadow: 0 3px 10px var(--font-color-opacity);
 }
 
+.project__img {
+  max-height: 160px;
+}
+
 .project .button {
   width: max-content;
   margin: 0 auto;
