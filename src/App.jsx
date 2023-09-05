@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-
 import Cursor from "./components/Cursor.jsx";
 import Main from "./components/Main.jsx";
 

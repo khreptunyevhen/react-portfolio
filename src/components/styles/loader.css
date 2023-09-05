@@ -1,0 +1,37 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader svg {
+  width: 100%;
+}
+
+.loading-text {
+  width: 100%;
+  font-weight: bold;
+  color: #4da31b;
+  transform: translate(0.4rem);
+  margin-top: 1rem;
+}
+
+#loader-path {
+  animation: colorChange 3s linear infinite;
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    fill: rgba(77, 163, 27, 0.5);
+  }
+  50% {
+    fill: #4da31b;
+  }
+}
