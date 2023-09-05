@@ -21,6 +21,7 @@ const Navigation = ({ activeTab, setActiveTab }) => {
       <ul className="navigation__menu">
         {info.navigation.map((item, index) => (
           <NavItem
+            activeTab={activeTab}
             className={`navigation__menu-item${
               Number(activeTab) === index ? " active" : ""
             }`}
