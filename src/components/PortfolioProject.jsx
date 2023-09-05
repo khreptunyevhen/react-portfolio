@@ -27,7 +27,10 @@ const PortfolioProject = () => {
             <h3 className="skills__title">Project Info:</h3>
             <p>{currentProject.shortDescription}</p>
             <h3 className="skills__title">Project Details:</h3>
-            <p>{currentProject.description}</p>
+            {currentProject.description.map((description, index) => (
+              <p key={`description-${index}`}>{description}</p>
+            ))}
+
             <div>
               <h3 className="skills__title">
                 {currentProject.technology.title}:

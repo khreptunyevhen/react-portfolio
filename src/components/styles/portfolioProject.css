@@ -23,6 +23,12 @@
   margin-bottom: 20px;
 }
 
+.current-project__slider {
+  position: sticky;
+  top: 122px;
+  max-height: 400px;
+}
+
 @media (max-width: 768px) {
   .current-project__wrapper {
     grid-template-columns: 1fr;
@@ -32,7 +38,8 @@
     justify-content: flex-start;
   }
 
-  .current-project__wrapper .current-project__slider {
+  .current-project__slider {
+    position: initial;
     max-height: 300px;
   }
 }
