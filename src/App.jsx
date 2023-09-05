@@ -13,19 +13,19 @@ function App() {
     y: 0,
   });
 
-  // useEffect(() => {
-  //   const mouseMove = (e) => {
-  //     setMousePositions((currentPositions) => ({
-  //       ...currentPositions,
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     }));
-  //   };
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePositions((currentPositions) => ({
+        ...currentPositions,
+        x: e.clientX,
+        y: e.clientY,
+      }));
+    };
 
-  //   window.addEventListener("mousemove", mouseMove);
+    window.addEventListener("mousemove", mouseMove);
 
-  //   return () => window.removeEventListener("mousemove", mouseMove);
-  // }, []);
+    return () => window.removeEventListener("mousemove", mouseMove);
+  }, []);
 
   return (
     <>

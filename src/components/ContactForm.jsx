@@ -150,7 +150,7 @@ const ContactForm = () => {
       </div>
       <Button dataText={`Send message`} buttonStyles="button"></Button>
       {showSuccess && (
-        <p className="success-message">The message had been send!</p>
+        <p className="success-message">The message has been sent!</p>
       )}
     </form>
   );

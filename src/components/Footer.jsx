@@ -1,4 +1,5 @@
 import Socials from "./Socials";
+import { Link } from "react-router-dom";
 
 import "./styles/footer.css";
 
@@ -15,14 +16,14 @@ const Footer = () => {
           </div>
           <div className="footer__code">
             <p className="footer__code-text">
-              You can see{" "}
-              <a
+              You can see the{" "}
+              <Link
+                to={"https://github.com/khreptunyevhen/react-portfolio"}
                 className="footer__code-link"
-                href="https://github.com/khreptunyevhen/react-portfolio"
                 target="__blank"
               >
                 code
-              </a>
+              </Link>
               .
             </p>
           </div>
