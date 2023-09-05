@@ -2,11 +2,15 @@ import SmallProject from "./SmallProject";
 
 import "./styles/projectsBox.css";
 
-const ProjectsBox = ({ allProjects }) => {
+const ProjectsBox = ({ allProjects, themeMode }) => {
   return (
     <div className="portfolio__projects projects">
       {allProjects.map((project, i) => (
-        <SmallProject key={`project-${project.img}-${i}`} project={project} />
+        <SmallProject
+          key={`project-${project.img}-${i}`}
+          project={project}
+          themeMode={themeMode}
+        />
       ))}
     </div>
   );

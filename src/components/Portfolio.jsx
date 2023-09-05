@@ -7,7 +7,7 @@ import "./styles/portfolio.css";
 
 import { info } from "../source/info.js";
 
-const Portfolio = () => {
+const Portfolio = ({ themeMode }) => {
   const { projects } = info;
 
   const [allProjects, setAllProjects] = useState(projects);
@@ -26,7 +26,7 @@ const Portfolio = () => {
         {allProjects.length > 0 ? (
           <>
             {/* <ProjectsTypeFilter projectTypes={projectTypes} /> */}
-            <ProjectsBox allProjects={allProjects} />
+            <ProjectsBox allProjects={allProjects} themeMode={themeMode} />
           </>
         ) : (
           <p>Coming soon... 😰</p>

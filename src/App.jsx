@@ -50,7 +50,7 @@ function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
-      <Main setActiveTab={setActiveTab} />
+      <Main setActiveTab={setActiveTab} themeMode={themeMode} />
       <Footer />
       {shouldRenderCursor && <Cursor mousePositions={mousePositions} />}
     </>

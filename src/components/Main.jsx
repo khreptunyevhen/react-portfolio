@@ -6,14 +6,20 @@ import Contacts from "./Contacts.jsx";
 import Home from "./Home.jsx";
 import NotFound from "./NotFound.jsx";
 
-const Main = ({ setActiveTab }) => {
+const Main = ({ setActiveTab, themeMode }) => {
   return (
     <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio/:id" element={<PortfolioProject />} />
+        <Route
+          path="/portfolio"
+          element={<Portfolio themeMode={themeMode} />}
+        />
+        <Route
+          path="/portfolio/:id"
+          element={<PortfolioProject themeMode={themeMode} />}
+        />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound setActiveTab={setActiveTab} />} />
       </Routes>

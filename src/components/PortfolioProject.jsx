@@ -7,7 +7,7 @@ import { info } from "../source/info.js";
 import "./styles/portfolioProject.css";
 import ProjectSlider from "./ProjectSlider.jsx";
 
-const PortfolioProject = () => {
+const PortfolioProject = ({ themeMode }) => {
   const routeParams = useParams();
   const id = routeParams.id;
 
@@ -27,7 +27,10 @@ const PortfolioProject = () => {
         <h2 className="current-project__title title">{currentProject.title}</h2>
         <div className="current-project__wrapper">
           {/* <div className="current-project__slider"> */}
-          <ProjectSlider currentProject={currentProject} />
+          <ProjectSlider
+            currentProject={currentProject}
+            themeMode={themeMode}
+          />
           {/* <img src={`.${currentProject.img}`} alt={currentProject.title} /> */}
           {/* </div> */}
           <div className="current-project__description">

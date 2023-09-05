@@ -93,11 +93,18 @@ export const info = {
           "BEM methodology",
         ],
       },
-      img: [
-        "./images/projects/portfolio/portfolio-1.png",
-        "./images/projects/portfolio/portfolio-2.png",
-        "./images/projects/portfolio/portfolio-3.png",
-      ],
+      img: {
+        dark: [
+          "./images/projects/portfolio/portfolio-2.png",
+          "./images/projects/portfolio/portfolio-4.png",
+          "./images/projects/portfolio/portfolio-6.png",
+        ],
+        light: [
+          "./images/projects/portfolio/portfolio-1.png",
+          "./images/projects/portfolio/portfolio-3.png",
+          "./images/projects/portfolio/portfolio-5.png",
+        ],
+      },
       code: "https://github.com/khreptunyevhen/react-portfolio",
       preview: "not yet",
       time: "2023-09-05",

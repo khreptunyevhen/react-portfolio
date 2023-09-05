@@ -5,7 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./styles/projectSlider.css";
 
-const ProjectSlider = ({ currentProject }) => {
+const ProjectSlider = ({ currentProject, themeMode }) => {
+  const images =
+    themeMode === "dark" ? currentProject.img.light : currentProject.img.dark;
+
   return (
     <Swiper
       loop={true}
@@ -14,7 +17,7 @@ const ProjectSlider = ({ currentProject }) => {
       }}
       modules={[Pagination]}
     >
-      {currentProject.img.map((image, index) => (
+      {images.map((image, index) => (
         <SwiperSlide key={`slider-${index}`}>
           <img src={`.${image}`} alt={image} />
         </SwiperSlide>
