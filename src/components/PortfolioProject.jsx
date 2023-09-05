@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import NotFound from "./NotFound.jsx";
 
 import { info } from "../source/info.js";
 
@@ -15,6 +16,10 @@ const PortfolioProject = () => {
   const currentProject = projects
     .filter((project) => project.idLink === id)
     .at(0);
+
+  if (!currentProject) {
+    return <NotFound />;
+  }
 
   return (
     <div className="container">

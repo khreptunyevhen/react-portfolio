@@ -11,8 +11,7 @@ import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 
 import "./styles/header.css";
 
-const Header = ({ themeMode, setThemeMode }) => {
-  const [activeTab, setActiveTab] = useState(0);
+const Header = ({ themeMode, setThemeMode, activeTab, setActiveTab }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const handleToggleThemeMode = () => {

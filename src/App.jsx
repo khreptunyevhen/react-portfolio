@@ -7,6 +7,7 @@ import Main from "./components/Main.jsx";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
+  const [activeTab, setActiveTab] = useState(0);
   const [mousePositions, setMousePositions] = useState({
     x: 0,
     y: 0,
@@ -43,8 +44,13 @@ function App() {
 
   return (
     <>
-      <Header themeMode={themeMode} setThemeMode={setThemeMode} />
-      <Main />
+      <Header
+        themeMode={themeMode}
+        setThemeMode={setThemeMode}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+      <Main setActiveTab={setActiveTab} />
       <Footer />
       {shouldRenderCursor && <Cursor mousePositions={mousePositions} />}
     </>

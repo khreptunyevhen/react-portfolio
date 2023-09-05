@@ -4,8 +4,9 @@ import Portfolio from "./Portfolio.jsx";
 import PortfolioProject from "./PortfolioProject.jsx";
 import Contacts from "./Contacts.jsx";
 import Home from "./Home.jsx";
+import NotFound from "./NotFound.jsx";
 
-const Main = () => {
+const Main = ({ setActiveTab }) => {
   return (
     <main>
       <Routes>
@@ -14,6 +15,7 @@ const Main = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/:id" element={<PortfolioProject />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="*" element={<NotFound setActiveTab={setActiveTab} />} />
       </Routes>
     </main>
   );

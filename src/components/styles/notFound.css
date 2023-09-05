@@ -1,0 +1,22 @@
+.not-found {
+  padding: var(--section-padding) 0;
+  padding-top: calc(var(--section-padding) + 110px);
+
+  text-align: center;
+}
+
+.not-found__title {
+  font-size: 6rem;
+  font-weight: 900;
+  text-shadow: 2px 2px var(--primary-color);
+}
+
+.not-found__subtitle {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.not-found__text {
+  margin-bottom: 40px;
+}
