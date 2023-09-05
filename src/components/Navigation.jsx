@@ -7,13 +7,13 @@ import "./styles/navigation.css";
 
 const Navigation = ({ activeTab, setActiveTab }) => {
   useEffect(() => {
-    const receiveActiveTab = window.localStorage.getItem("active-tab");
+    const receiveActiveTab = window.sessionStorage.getItem("active-tab");
 
     if (receiveActiveTab !== null) setActiveTab(JSON.parse(receiveActiveTab));
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("active-tab", JSON.stringify(activeTab));
+    window.sessionStorage.setItem("active-tab", JSON.stringify(activeTab));
   }, [activeTab]);
 
   return (
