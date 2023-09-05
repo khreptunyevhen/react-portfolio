@@ -7,11 +7,11 @@ import Main from "./components/Main.jsx";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
-
   const [mousePositions, setMousePositions] = useState({
     x: 0,
     y: 0,
   });
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -27,12 +27,26 @@ function App() {
     return () => window.removeEventListener("mousemove", mouseMove);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const shouldRenderCursor = screenWidth > 768;
+
   return (
     <>
       <Header themeMode={themeMode} setThemeMode={setThemeMode} />
       <Main />
       <Footer />
-      <Cursor mousePositions={mousePositions} />
+      {shouldRenderCursor && <Cursor mousePositions={mousePositions} />}
     </>
   );
 }
