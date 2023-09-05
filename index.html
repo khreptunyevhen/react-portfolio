@@ -50,6 +50,13 @@
       </div>
     </div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="text/babel" src="/src/services/getLoaderBg.js"></script>
+    <script>
+      const loader = document.querySelector(".loader");
+
+      const receiveTheme = window.localStorage.getItem("theme");
+      const bgColor = JSON.parse(receiveTheme) === "dark" ? "#212529" : "#fff";
+
+      loader.style.backgroundColor = bgColor;
+    </script>
   </body>
 </html>
