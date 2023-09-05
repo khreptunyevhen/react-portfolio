@@ -48,7 +48,7 @@ const Home = () => {
         {isLoading ? (
           <p>Loading advice...</p>
         ) : (
-          <p className="home__advice">“{advice}”</p>
+          <blockquote className="home__advice">“{advice}”</blockquote>
         )}
       </div>
     </section>
