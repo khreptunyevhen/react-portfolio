@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin-bottom: 60px;
 }
 
 .home__info {
@@ -42,6 +43,12 @@
 .home__description {
   font-size: 1.5em;
   margin-bottom: 40px;
+}
+
+.home__advice {
+  text-align: center;
+  font-style: italic;
+  color: var(--primary-color);
 }
 
 @media (max-width: 640px) {
