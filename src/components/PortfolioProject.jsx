@@ -79,6 +79,12 @@ const PortfolioProject = ({ themeMode }) => {
                 >
                   Open
                 </Link>
+                <Link
+                  to={"/portfolio"}
+                  className="current-project__link footer__code-link"
+                >
+                  ⬅ Go back
+                </Link>
               </p>
             </div>
           </div>

@@ -106,7 +106,7 @@ export const info = {
         ],
       },
       code: "https://github.com/khreptunyevhen/react-portfolio",
-      preview: "not yet",
+      preview: "https://ykwebdev.com/",
       time: "2023-09-05",
     },
   ],

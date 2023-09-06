@@ -29,6 +29,11 @@
   max-height: 400px;
 }
 
+.current-project__link {
+  display: block;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .current-project__wrapper {
     grid-template-columns: 1fr;
