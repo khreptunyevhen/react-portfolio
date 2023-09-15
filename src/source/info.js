@@ -109,5 +109,50 @@ export const info = {
       preview: "https://ykwebdev.com/",
       time: "2023-09-05",
     },
+    {
+      id: 2,
+      idLink: "grocery-list",
+      title: "Grocery list",
+      type: "Application",
+      description: [
+        "In today's fast-paced world, convenience is key, especially when it comes to managing our daily tasks. That's why I embarked on a journey to create a grocery list application that not only streamlines the shopping experience but also adds a touch of personalization and interactivity.",
+        "My Grocery List Application is a testament to the power of modern web development technologies. It leverages HTML, SASS (for sleek styling), React, and JavaScript, making it a dynamic and responsive solution.",
+        "To enhance the user experience, I implemented custom hooks, optimizing code reusability and making the application more maintainable. Additionally, I integrated an API to fetch images for products, adding visual appeal and making it easier for users to identify items on their lists.",
+        "The application doesn't stop at just creating a shopping list; it's designed to cater to your preferences. With a user-friendly settings panel, you can customize the interface to match your style. Choose between dark and light modes, tweak the font, and select your preferred accent color to create a shopping environment that feels just right.",
+        "Creating, deleting, or updating a product item is as intuitive as it gets. With a few clicks or taps, you can effortlessly manage your grocery list, ensuring you never forget an essential item again. The application's local storage functionality ensures that your list persists across sessions, making it a reliable companion for your shopping needs.",
+      ],
+      shortDescription:
+        "In conclusion, My Grocery List Application is more than just a digital shopping list. It's a tool that combines technology, design, and user-centric features to make your grocery shopping experience smoother and more enjoyable. As a web developer, I'm committed to creating practical solutions that enhance daily life, and I'm excited to share this project with you.",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "SASS",
+          "JavaScript",
+          "React",
+          "React Hooks",
+          "Custom Hooks",
+          "Responsive Design",
+          "Cross browser compatibility",
+        ],
+      },
+      img: {
+        dark: [
+          "./images/projects/grocery-list/grocery-list-6.png",
+          "./images/projects/grocery-list/grocery-list-2.png",
+          "./images/projects/grocery-list/grocery-list-4.png",
+          "./images/projects/grocery-list/grocery-list-8.png",
+        ],
+        light: [
+          "./images/projects/grocery-list/grocery-list-5.png",
+          "./images/projects/grocery-list/grocery-list-1.png",
+          "./images/projects/grocery-list/grocery-list-3.png",
+          "./images/projects/grocery-list/grocery-list-7.png",
+        ],
+      },
+      code: "https://github.com/khreptunyevhen/grocery-list",
+      preview: "https://khreptunyevhen.github.io/grocery-list/",
+      time: "2023-09-15",
+    },
   ],
 };
