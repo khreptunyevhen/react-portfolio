@@ -6,13 +6,18 @@ import Cursor from "./components/Cursor.jsx";
 import Main from "./components/Main.jsx";
 
 function App() {
-  const [themeMode, setThemeMode] = useState("light");
+  // const [themeMode, setThemeMode] = useState("light");
+  const [themeMode, setThemeMode] = useState(() =>
+    JSON.parse(window.localStorage.getItem("theme"))
+  );
   const [activeTab, setActiveTab] = useState(0);
   const [mousePositions, setMousePositions] = useState({
     x: 0,
     y: 0,
   });
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  console.log(themeMode);
 
   useEffect(() => {
     const mouseMove = (e) => {
