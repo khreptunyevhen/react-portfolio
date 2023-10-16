@@ -10,6 +10,7 @@ export const info = {
     { id: 1, title: "Home", link: "/" },
     { id: 2, title: "About me", link: "/about-me" },
     { id: 3, title: "Portfolio", link: "/portfolio" },
+    { id: 5, title: "Try it", link: "/try-it" },
     { id: 4, title: "Contact", link: "/contacts" },
   ],
   socialLinks: [
@@ -155,4 +156,31 @@ export const info = {
       time: "2023-09-15",
     },
   ],
+  // challenges: [
+  //   {
+  //     id: 1,
+  //     title: "Calculator",
+  //     description:
+  //       "At its core, my portfolio is built upon a foundation of web technologies. The front-end is constructed using HTML, CSS, and JavaScript, while the power of React provides the dynamic interactivity that sets it apart. React hooks like useState, useEffect, useParams, and useRef were instrumental in creating a smooth and responsive user experience.",
+  //     tasks: {
+  //       id: 1,
+  //       title: "What you have to do",
+  //       taskValues: [
+  //         "open is built upon a foundation of web technologies. The front-end is constructed using HTML, CSS, and JavaScript, while the power of React provides the dynamic interactivity that sets it apart. Re",
+  //         "close  foundation of web technologies. The front-end is c",
+  //         "watch f web technologies. The front-end is constructed using HTML,",
+  //       ],
+  //       extraInfo: "",
+  //     },
+  //     imgs: [
+  //       "./images/projects/portfolio/portfolio-2.png",
+  //       "./images/projects/portfolio/portfolio-2.png",
+  //     ],
+  //     techMain: ["html", "css", "js", "react"],
+  //     links: [
+  //       { tech: "js", link: "", code: "" },
+  //       { tech: "react", link: "", code: "" },
+  //     ],
+  //   },
+  // ],
 };

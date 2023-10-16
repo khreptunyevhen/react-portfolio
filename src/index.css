@@ -16,12 +16,14 @@
 [data-theme="light"] {
   --font-color: #212529;
   --font-color-opacity: rgba(24, 24, 24, 0.2);
+  --card-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --bg-color: #fff;
 }
 
 [data-theme="dark"] {
   --font-color: #fff;
   --font-color-opacity: rgba(255, 255, 255, 0.2);
+  --card-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
   --bg-color: #212529;
 }
 

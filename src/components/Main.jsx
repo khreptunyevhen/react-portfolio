@@ -5,6 +5,8 @@ import PortfolioProject from "./PortfolioProject.jsx";
 import Contacts from "./Contacts.jsx";
 import Home from "./Home.jsx";
 import NotFound from "./NotFound.jsx";
+import TryIt from "./TryIt.jsx";
+import ChallengeDetails from "./ChallengeDetails.jsx";
 
 const Main = ({ setActiveTab, themeMode }) => {
   return (
@@ -20,6 +22,8 @@ const Main = ({ setActiveTab, themeMode }) => {
           path="/portfolio/:id"
           element={<PortfolioProject themeMode={themeMode} />}
         />
+        <Route path="/try-it/" element={<TryIt />} />
+        <Route path="/try-it/:id" element={<ChallengeDetails />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound setActiveTab={setActiveTab} />} />
       </Routes>
