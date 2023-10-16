@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./styles/projectSlider.css";
 
 const ProjectSlider = ({ currentProject, themeMode }) => {
@@ -15,7 +16,8 @@ const ProjectSlider = ({ currentProject, themeMode }) => {
       pagination={{
         dynamicBullets: true,
       }}
-      modules={[Pagination]}
+      navigation={true}
+      modules={[Navigation, Pagination]}
     >
       {images.map((image, index) => (
         <SwiperSlide key={`slider-${index}`}>
