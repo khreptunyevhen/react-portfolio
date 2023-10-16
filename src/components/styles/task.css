@@ -13,6 +13,7 @@
 .task__img {
   height: 200px;
   background-color: var(--font-color-opacity);
+  border: 1px solid var(--font-color-opacity);
   margin-bottom: 20px;
 }
 

@@ -6,12 +6,6 @@ import Task from "./Task";
 const { challenges } = info;
 
 function TryIt() {
-  if (!challenges)
-    return (
-      <div className="try-it">
-        <p className="container">Comming soon...</p>
-      </div>
-    );
   return (
     <section className="try-it">
       <div className="container">
@@ -28,11 +22,17 @@ function TryIt() {
         yourself. Let's learn, grow, and have fun tackling different problems
         together. Join me on this journey!`}
         </p>
-        <div className="try-it__tasks">
-          {challenges.map((challenge) => (
-            <Task key={challenge.id} challenge={challenge} />
-          ))}
-        </div>
+        {
+          <div className="try-it__tasks">
+            {challenges ? (
+              challenges.map((challenge) => (
+                <Task key={challenge.id} challenge={challenge} />
+              ))
+            ) : (
+              <p>Comming soon...</p>
+            )}
+          </div>
+        }
       </div>
     </section>
   );

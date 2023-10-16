@@ -6,7 +6,6 @@ import Cursor from "./components/Cursor.jsx";
 import Main from "./components/Main.jsx";
 
 function App() {
-  // const [themeMode, setThemeMode] = useState("light");
   const [themeMode, setThemeMode] = useState(() =>
     JSON.parse(window.localStorage.getItem("theme"))
   );
@@ -16,8 +15,6 @@ function App() {
     y: 0,
   });
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  console.log(themeMode);
 
   useEffect(() => {
     const mouseMove = (e) => {
