@@ -6,8 +6,8 @@ import Cursor from "./components/Cursor.jsx";
 import Main from "./components/Main.jsx";
 
 function App() {
-  const [themeMode, setThemeMode] = useState(() =>
-    JSON.parse(window.localStorage.getItem("theme"))
+  const [themeMode, setThemeMode] = useState(
+    () => JSON.parse(window.localStorage.getItem("theme")) || "light"
   );
   const [activeTab, setActiveTab] = useState(0);
   const [mousePositions, setMousePositions] = useState({
