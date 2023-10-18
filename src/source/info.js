@@ -155,6 +155,50 @@ export const info = {
       preview: "https://khreptunyevhen.github.io/grocery-list/",
       time: "2023-09-15",
     },
+    {
+      id: 3,
+      idLink: "miralou-simple-e-commerce",
+      title: "Miralou e-commerce store",
+      type: "SPA",
+      description: [
+        "In today's online shopping world, I've created a user-friendly e-commerce store. While it's not as complicated as big online retailers, it has a lot to offer.",
+        "I used a special kind of data called JSON to make the products look real. You can add and remove items from your wishlist and cart. When you do, the cart will show you how much everything costs, just like a real store. It's a simple way to shop.",
+        "The store works on all sorts of devices, from big computers to small phones. I added fun things like sliders to show products better. You can slide through the products and see more pictures and information. If you want to look at different pages of products, there's something called 'pagination' to help you do that easily.",
+        "Looking for something specific? No problem! I added a search bar to help you find products quickly. Just type in what you're looking for, and the store will find it for you. It's all about making your shopping experience smoother and more convenient.",
+      ],
+      shortDescription:
+        "While it doesn't feature authentication or payment systems, it offers a multi-page shopping experience with dynamic product data from a JSON file. You can build wishlists, manage your cart, and see prices update in real-time as you shop. The site is fully responsive, features sliders, pagination, and even has a handy search bar to quickly find the products you're looking for. It's all about making online shopping a breeze!",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "SASS",
+          "JavaScript",
+          "JSON",
+          "React",
+          "React Hooks",
+          "Responsive Design",
+          "Cross browser compatibility",
+        ],
+      },
+      img: {
+        dark: [
+          "./images/projects/miralou/miralou-2.png",
+          "./images/projects/miralou/miralou-4.png",
+          "./images/projects/miralou/miralou-6.png",
+          "./images/projects/miralou/miralou-8.png",
+        ],
+        light: [
+          "./images/projects/miralou/miralou-2.png",
+          "./images/projects/miralou/miralou-3.png",
+          "./images/projects/miralou/miralou-5.png",
+          "./images/projects/miralou/miralou-7.png",
+        ],
+      },
+      code: "https://github.com/khreptunyevhen/simple-e-commerce",
+      preview: "https://admirable-quokka-63c35d.netlify.app/",
+      time: "2023-07-13",
+    },
   ],
   // challenges: [
   //   {
