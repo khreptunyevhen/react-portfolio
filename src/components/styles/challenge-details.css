@@ -41,6 +41,7 @@
 .challenge-details__img {
   border: 1px solid var(--font-color-opacity);
   background-color: var(--font-color-opacity);
+  max-height: 500px;
 }
 
 .challenge-details__task-item {
