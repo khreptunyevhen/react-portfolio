@@ -227,5 +227,32 @@ export const info = {
         },
       ],
     },
+    {
+      id: 2,
+      title: "Hangman game",
+      description:
+        "A Hangman game is a classic word puzzle game. The game is often represented visually with a 'hangman' figure, which is gradually drawn as incorrect guesses are made. The goal for the player guessing the word is to guess the word correctly before the hangman is fully drawn.",
+      tasks: {
+        id: 1,
+        title: "What you have to do",
+        taskValues: [
+          "Display hangman pole and figure using SVG or pure HTML/CSS.",
+          "Generate a random word and question(hint).",
+          "Show notification when select a letter twice.",
+          "Show results when the user wins or loses.",
+          "Restart the game",
+        ],
+        extraInfo: "",
+      },
+      imgs: ["./images/challenges/hangman/hangman.png"],
+      techMain: ["HTML", "CSS", "JS"],
+      links: [
+        {
+          tech: "JS",
+          link: "https://khreptunyevhen.github.io/js-challenges/hangman-game/",
+          code: "https://github.com/khreptunyevhen/js-challenges/tree/main/hangman-game",
+        },
+      ],
+    },
   ],
 };
