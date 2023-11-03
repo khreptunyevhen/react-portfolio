@@ -156,6 +156,47 @@ export const info = {
       time: "2023-09-15",
     },
     {
+      id: 4,
+      idLink: "weekaway-landing",
+      title: "Weekaway landing",
+      type: "Static landing",
+      description: [
+        "Welcome to the WeekAway landing page, where your next unforgettable travel experience begins. Created using the powerful combination of Tailwind CSS and React, this static webpage offers a sneak peek into the world of hassle-free trip booking.",
+        "Responsive Design: Whether you're browsing on a desktop, tablet, or smartphone, the WeekAway page adapts seamlessly, ensuring you can access it from anywhere.",
+        "Mobile Menu: With our intuitive mobile menu, navigating the site on smaller screens is a breeze. Finding your dream destination is just a tap away..",
+      ],
+      shortDescription:
+        "Discover WeekAway - Your Go-To for Easy Trip Booking! 🌍✈️. Experience responsive design and a user-friendly mobile menu. Your journey to unforgettable adventures starts here!",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "TailwindCSS",
+          "JavaScript",
+          "React",
+          "Responsive Design",
+          "Cross browser compatibility",
+        ],
+      },
+      img: {
+        dark: [
+          "./images/projects/weekaway/weekaway-1.png",
+          "./images/projects/weekaway/weekaway-2.png",
+          "./images/projects/weekaway/weekaway-3.png",
+          "./images/projects/weekaway/weekaway-4.png",
+        ],
+        light: [
+          "./images/projects/weekaway/weekaway-1.png",
+          "./images/projects/weekaway/weekaway-2.png",
+          "./images/projects/weekaway/weekaway-3.png",
+          "./images/projects/weekaway/weekaway-4.png",
+        ],
+      },
+      code: "https://github.com/khreptunyevhen/weekaway-react",
+      preview: "https://khreptunyevhen.github.io/weekaway-react/",
+      time: "2023-06-22",
+    },
+    {
       id: 3,
       idLink: "miralou-simple-e-commerce",
       title: "Miralou e-commerce store",
