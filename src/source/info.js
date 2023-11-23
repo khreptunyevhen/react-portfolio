@@ -67,6 +67,43 @@ export const info = {
   ],
   projects: [
     {
+      id: 5,
+      idLink: "loopstudio-landing",
+      title: "Loopstudio landing",
+      type: "Static landing",
+      description: [
+        "Experience the future of web design with LoopStudio's responsive landing page.",
+        "Responsive Design: Whether you're browsing on a desktop, tablet, or smartphone, the WeekAway page adapts seamlessly, ensuring you can access it from anywhere.",
+        "Mobile Menu: With our intuitive mobile menu, navigating the site on smaller screens is a breeze. Finding your dream destination is just a tap away..",
+      ],
+      shortDescription:
+        "Unleash your musical genius with LoopStudio! Our responsive landing page ensures a seamless experience on any device, featuring an intuitive burger menu for effortless navigation. Dive into a world of creativity, powerful tools, and a global community of artists. Join LoopStudio today and turn your beats into masterpieces.",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "TailwindCSS",
+          "JavaScript",
+          "Responsive Design",
+          "Cross browser compatibility",
+        ],
+      },
+      img: {
+        dark: [
+          "./images/projects/loopstudio/loopstudio-1.png",
+          "./images/projects/loopstudio/loopstudio-2.png",
+        ],
+        light: [
+          "./images/projects/loopstudio/loopstudio-1.png",
+          "./images/projects/loopstudio/loopstudio-2.png",
+        ],
+      },
+      code: "https://github.com/khreptunyevhen/tailwindCSS-projects/tree/main/loopstudio",
+      preview:
+        "https://khreptunyevhen.github.io/tailwindCSS-projects/loopstudio/",
+      time: "2023-07-25",
+    },
+    {
       id: 1,
       idLink: "personal-website",
       title: "Personal portfolio",
