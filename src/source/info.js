@@ -67,6 +67,41 @@ export const info = {
   ],
   projects: [
     {
+      id: 6,
+      idLink: "travel-landing",
+      title: "Travel. landing",
+      type: "Static landing",
+      description: [
+        "Responsive Design: Seamlessly plan your travels on any device - desktop, tablet, or smartphone. Our website's responsive design ensures a consistent and visually pleasing experience for effortless exploration.",
+        "Scroll Animation Magic: Elevate your journey with captivating scroll animations. Engage with dynamic transitions, revealing destination highlights and exclusive offers as you scroll, creating a visually rich and memorable travel experience.",
+      ],
+      shortDescription:
+        "The user-friendly interface makes planning a breeze, with curated itineraries, exclusive deals, and expert recommendations at your fingertips.",
+      technology: {
+        title: "Technology",
+        skills: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Responsive Design",
+          "Cross browser compatibility",
+        ],
+      },
+      img: {
+        dark: [
+          "./images/projects/travel-landing/travel-1.png",
+          "./images/projects/travel-landing/travel-2.png",
+        ],
+        light: [
+          "./images/projects/travel-landing/travel-3.png",
+          "./images/projects/travel-landing/travel-4.png",
+        ],
+      },
+      code: "https://github.com/khreptunyevhen/travel-landing-page",
+      preview: "https://khreptunyevhen.github.io/travel-landing-page/",
+      time: "2023-01-19",
+    },
+    {
       id: 5,
       idLink: "loopstudio-landing",
       title: "Loopstudio landing",
